@@ -2,12 +2,6 @@ $dark: #262626;
 $laptop: 1340px;
 $tablet: 940px;
 
-
-html {
-  //TODO: remove
-  height: 3000px;
-}
-
 body {
   overflow-x: hidden;
   background-color: #101010;
@@ -73,7 +67,10 @@ body {
   height: 264px;
 }
 
-button.red {
+.button.red {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 50px;
   outline: none;
   cursor: pointer;
   box-shadow: none;
@@ -88,6 +85,7 @@ button.red {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 
   @media (max-width: 991px) {
+    margin-top: 40px;
     border-radius: 4px;
     padding: 16px 28px;
     font-size: 16px;
@@ -211,7 +209,6 @@ button.red {
 /////////////// HERO ///////////////
 
 .hero {
-  max-height: 100vh;
   overflow: hidden;
 
   &__container {
