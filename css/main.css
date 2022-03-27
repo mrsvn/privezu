@@ -60,13 +60,19 @@ body {
   box-shadow: none;
   border: none;
   border-radius: 10px;
-  background-color: #E9503B;
   padding: 18px 58px;
-  color: #ffffff;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   font-family: "Roboto", "Helvetica", sans-serif;
+}
+.button.red.large {
+  padding: 18px 58px;
+  font-size: 24px;
+}
+.button.red.red {
+  background-color: #E9503B;
+  color: #ffffff;
 }
 @media (max-width: 991px) {
   .button.red {
@@ -76,6 +82,16 @@ body {
     font-size: 16px;
     line-height: 18px;
   }
+}
+
+.link {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.link:hover {
+  text-decoration: none;
 }
 
 .header {
@@ -271,4 +287,63 @@ body {
     height: 720px;
     width: calc(56% + 100px);
   }
+}
+.minerals__container {
+  margin-top: 100px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 68px;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+@media (max-width: 1340px) {
+  .title {
+    font-size: 54px;
+  }
+}
+@media (max-width: 991px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+.mineral__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  min-height: 400px;
+  margin-right: -140px;
+}
+.mineral__container--left {
+  margin-right: 0;
+  margin-left: -140px;
+}
+.mineral__container--left .mineral__info {
+  text-align: right;
+  order: 2;
+  width: 50%;
+  margin-right: 0;
+}
+.mineral__container--left .mineral__pic {
+  margin-right: 30px;
+  width: calc(50% - 30px);
+  order: 1;
+}
+.mineral__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 30px;
+  width: calc(50% - 30px);
+}
+.mineral__text p {
+  margin-bottom: 16px;
+}
+.mineral__pic {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

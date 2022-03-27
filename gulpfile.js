@@ -1,10 +1,12 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+concat = require('gulp-concat');
 const del = require('del');
 
 gulp.task('styles', () => {
 	return gulp.src('sass/*.scss')
 			.pipe(sass().on('error', sass.logError))
+			.pipe(concat('main.css'))
 			.pipe(gulp.dest('./css/'));
 });
 
