@@ -1,6 +1,7 @@
 $dark: #262626;
 $laptop: 1340px;
 $tablet: 940px;
+$mobile: 659px;
 
 body {
   overflow-x: hidden;
@@ -86,7 +87,7 @@ body {
   padding: 18px 58px;
   font-size: 24px;
   }
-  
+
   &.red {
     background-color: #E9503B;
     color: #ffffff;
@@ -98,6 +99,9 @@ body {
     padding: 16px 28px;
     font-size: 16px;
     line-height: 18px;
+    letter-spacing: 1px;
+    line-height: initial;
+    padding: 18px 48px;
   }
 }
 
@@ -141,7 +145,7 @@ body {
     @media (max-width: 659px) {
       flex-direction: column;
       align-items: flex-start;
-      margin: 32px -20px 0;
+      margin: 0 -20px 0;
       border-radius: 0;
     }
   }
@@ -251,6 +255,7 @@ body {
     @media (max-width: 991px) {
       display: block;
       width: auto;
+      margin-right: 40px;
     }
 
     h1 {
