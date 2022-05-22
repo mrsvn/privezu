@@ -11,6 +11,13 @@ $mobile: 659px;
   &__btn {
     width: 100%;
     text-align: center;
+
+    @media (max-width: $mobile) {
+      .button.red.large {
+        padding: 18px 28px;
+        font-size: 19px;
+      }
+    }
   }
 }
 
@@ -148,8 +155,6 @@ $mobile: 659px;
 }
 ////////////////////////////////////////////////////////////
 
-
-
 /////////////// CALL BACK ///////////////
 .call_back {
   text-align: center;
@@ -161,34 +166,101 @@ $mobile: 659px;
 
 /////////////// GALLERY ///////////////
 .gallery {
-    margin-top: 130px;
+  margin-top: 130px;
 
-    @media (max-width: $mobile) {
-      margin-top: 70px;
-    }
+  @media (max-width: $mobile) {
+    margin-top: 70px;
+  }
+
+  .tns-controls,
+  button {
+    display: none;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
 }
 ////////////////////////////////////////////////////////////
 
 /////////////// CONTACTS ///////////////
 .contacts {
-    margin-top: 130px;
+  margin-top: 130px;
 
-    @media (max-width: $mobile) {
-      margin-top: 70px;
+  @media (max-width: $mobile) {
+    margin-top: 70px;
+  }
+
+  &__socials {
+    display: flex;
+    & > p {
+      margin-right: 12px;
+      @media (max-width: $mobile) {
+        display: none;
+      }
     }
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
+  a {
+    color: #ffffff;
+  }
+  &__container {
+    & > p,
+    & > div {
+      margin-bottom: 10px;
+    }
+  }
+}
+////////////////////////////////////////////////////////////
+
+/////////////// SOCIALS ///////////////
+.social {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 10px;
+  }
+
+  &__img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
 }
 ////////////////////////////////////////////////////////////
 
 /////////////// DEPEND PRICE ///////////////
 .depend_prce {
-    margin-top: 130px;
+  margin-top: 130px;
 
-    @media (max-width: $mobile) {
-      margin-top: 70px;
-    }
+  @media (max-width: $mobile) {
+    margin-top: 70px;
+  }
 
-    p {
-        margin-bottom: 12px;
-    }
+  p {
+    margin-bottom: 12px;
+  }
 }
 ////////////////////////////////////////////////////////////
+
+.copyright {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+  opacity: 0.6;
+  margin-top: 90px;
+  margin-bottom: 90px;
+
+  @media (max-width: $mobile) {
+    margin-top: 60px;
+  }
+}
+
+.hidden {
+  display: none;
+}

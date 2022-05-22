@@ -1,0 +1,54 @@
+$dark: #262626;
+$laptop: 1340px;
+$tablet: 750px;
+
+.table {
+  padding-top: 190px;
+
+  &__row {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    
+
+   &--extra {
+      @media (max-width: $tablet) {
+        border-top: 1px solid #ffffff;
+      }
+    }
+
+    &--header {
+      font-weight: 600;
+       @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &__prices_mob {
+    display: none;
+    @media (max-width: $tablet) {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+
+  &__name {
+    width: calc(50% - 30px);
+    margin-right: 30px;
+
+    @media (max-width: $tablet) {
+        width: 100%;
+        margin-right: 0;
+    
+      }
+  }
+  &__price {
+    width: 25%;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}

@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -60,10 +65,10 @@
                   <div class="mineral__title title">Песок</div>
                   <div class="mineral__text">
                     <p>
-                      Сыпучий материал, активно применяемый в&nbsp;строительстве
-                      любого типа. Он&nbsp;может выполнять функции дренажа,
-                      септика и&nbsp;использоваться в&nbsp;водоочистительных
-                      системах.
+                      Основные сферы применения&nbsp;&mdash; строительство,
+                      дорожные работы и&nbsp;обустройство территории &mdash;.
+                      Может выполнять функции дренажа, септика
+                      и&nbsp;использоваться в&nbsp;водоочистительных системах.
                     </p>
                     <p>Цена: от 1100 руб./м3</p>
                   </div>
@@ -96,9 +101,54 @@
                 ></div>
               </div>
             </div>
+
+            <div class="minerals__item mineral hidden">
+              <div class="mineral__container mineral__container--left">
+                <div class="mineral__info">
+                  <div class="mineral__title title">Гравий</div>
+                  <div class="mineral__text">
+                    <p>
+                      Используется для строительства трасс, фундаментов, засыпки
+                      разнообразных площадок, получения кровельных материалов.
+                      Популярен в&nbsp;ландшафтном дизайне: при оформлении
+                      дачных участков, мощении садовых дорожек, разбивке
+                      цветников и&nbsp;т.&nbsp;п.
+                    </p>
+                    <p>Цена: от 1100 руб./м3</p>
+                  </div>
+                  <a href="./minerals" class="link">Цены и виды -></a>
+                </div>
+                <div
+                  class="mineral__pic"
+                  style="background-image: url('./img/graviy.jpg')"
+                ></div>
+              </div>
+            </div>
+
+            <div class="minerals__item mineral hidden">
+              <div class="mineral__container">
+                <div class="mineral__info">
+                  <div class="mineral__title title">Торф</div>
+                  <div class="mineral__text">
+                    <p>
+                      Используют при создании газонов, укрепления откосов
+                      земляных насыпей, водоемов, каналов, в&nbsp;качестве
+                      подстилки для скота, в&nbsp;производстве теплоизоляционных
+                      материалов, для&nbsp;обеззараживания почвы.
+                    </p>
+                    <p>Цена: от 1 450 руб./м3</p>
+                  </div>
+                  <a href="./minerals" class="link">Цены и виды -></a>
+                </div>
+                <div
+                  class="mineral__pic"
+                  style="background-image: url('./img/torf.jpg')"
+                ></div>
+              </div>
+            </div>
           </div>
           <div class="minerals__btn">
-            <a href="./minerals.html" class="button red large">Еще материалы</a>
+            <div class="button red large">Еще материалы</div>
           </div>
         </div>
       </div>
@@ -169,9 +219,16 @@
     <div class="depend_prce">
       <div class="container">
         <div class="depend_prce__container">
-          <h2 class="title">От чего зависит цена</h2>
-          <p>Стоимость нерудных материалов расчитывается из&nbsp;заказанного объема, а&nbsp;также количества техники привлеченной к&nbsp;доставке и&nbsp;ее&nbsp;тоннажа.</p>
-          <p>Цена доставки зависит от&nbsp;удаленности объекта от&nbsp;места добычи или хранения нерудных материалов.</p>
+          <h2 class="title">От чего зависит&nbsp;цена</h2>
+          <p>
+            Стоимость нерудных материалов расчитывается из&nbsp;заказанного
+            объема, а&nbsp;также количества техники привлеченной к&nbsp;доставке
+            и&nbsp;ее&nbsp;тоннажа.
+          </p>
+          <p>
+            Цена доставки зависит от&nbsp;удаленности объекта от&nbsp;места
+            добычи или хранения нерудных материалов.
+          </p>
         </div>
       </div>
     </div>
@@ -179,6 +236,19 @@
       <div class="container">
         <div class="gallery__container">
           <h2 class="title">Галерея</h2>
+          <p>Все фото сделаны на объектах заказчиков.</p>
+          <div class="my-slider">
+            <img src="./img/carousel_1.jpg" />
+
+            <img src="./img/carousel_3.jpg" />
+            <img src="./img/carousel_4.jpg" />
+
+            <img src="./img/carousel_6.jpg" />
+            <img src="./img/carousel_5.jpg" />
+            <img src="./img/carousel_8.jpg" />
+            <img src="./img/carousel_2.jpg" />
+            <!-- <img src="./img/carousel_9.jpg" /> -->
+          </div>
         </div>
       </div>
     </div>
@@ -186,27 +256,84 @@
       <div class="container">
         <div class="contacts__container">
           <h2 class="title">Контактная информация</h2>
-          <p>Прием заказов ежедневно 8:00-20:00</p>
-          <p>+7 (4932) 344-722</p>
-          <div class="contacts__socials" style="display: flex">
-            <div class="social">whats up</div>
-            <div class="social">viber</div>
-            <div class="social">telegram</div>
+          <p>Прием заказов ежедневно 7:00 - 21:00</p>
+          <p>
+            По всем вопросам и для заказа доставки +7&nbsp;(4932)&nbsp;344-722
+          </p>
+
+          <div class="contacts__socials">
+            <p>Мы на связи в</p>
+            <div class="social">
+              <div class="social__img">
+                <img src="svg/sprite.svg#whatsapp" />
+              </div>
+
+              WhatsApp
+            </div>
+            <div class="social">
+              <div class="social__img">
+                <img src="svg/sprite.svg#viber" />
+              </div>
+              Viber
+            </div>
+            <div class="social">
+              <div class="social__img">
+                <img src="svg/sprite.svg#telegram" />
+              </div>
+              Telegram
+            </div>
           </div>
-          <a href="mailto" class="link">Написать на info@gmail.com</a>
-          <p>«Самострой» доставка сыпучих материалов</p>
+          <a href="mailto"
+            >Нажмите, чтобы отправить нам письмо на info@gmail.com</a
+          >
         </div>
       </div>
     </div>
-
+    <div class="copyright">
+      © &laquo;Самострой&raquo;&nbsp;&mdash; доставка сыпучих материалов
+    </div>
+    <!-- 
     <div class="call_back">
       <div class="container">
         <div class="call_back__container">
           <a href="#" class="button red large">Заказать обратный звонок</a>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+      console.log("script");
+      var slider = tns({
+        container: ".my-slider",
+        items: 3,
+        gutter: 20,
+        mouseDrag: true,
+        swipeAngle: false,
+        speed: 400,
+        responsive: {
+          350: {
+            items: 1,
+          },
+          500: {
+            items: 2,
+          },
+          900: {
+            items: 3,
+          },
+        },
+      });
+
+      document
+        .getElementsByClassName("minerals__btn")[0]
+        .addEventListener("click", function () {
+          this.classList.add("hidden");
+          const mineralsHidden = document.querySelectorAll(".mineral.hidden");
+
+          for (const mineral of mineralsHidden) {
+            mineral.classList.remove("hidden");
+          }
+        });
+    </script>
   </body>
 </html>

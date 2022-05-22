@@ -7,9 +7,15 @@ body {
   overflow-x: hidden;
   background-color: #101010;
   color: #ffffff;
-  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 0;
   margin: 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 //body::after {
@@ -52,11 +58,14 @@ body {
   @media (max-width: 659px) {
     padding: 0 20px;
   }
-
 }
 
 .top_shade {
-  background: linear-gradient(180deg, #484848 0%, rgba(196, 196, 196, 0) 84.86%);
+  background: linear-gradient(
+    180deg,
+    #484848 0%,
+    rgba(196, 196, 196, 0) 84.86%
+  );
   z-index: 1;
   user-select: none;
   pointer-events: none;
@@ -81,15 +90,15 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
 
   &.large {
-  padding: 18px 58px;
-  font-size: 24px;
+    padding: 18px 58px;
+    font-size: 24px;
   }
 
   &.red {
-    background-color: #E9503B;
+    background-color: #e9503b;
     color: #ffffff;
   }
 
@@ -112,7 +121,7 @@ body {
   cursor: pointer;
 
   &:hover {
-  text-decoration: none;
+    text-decoration: none;
   }
 }
 
@@ -223,7 +232,6 @@ body {
       text-decoration: none;
     }
   }
-
 }
 
 /////////////////////////////////////////////
@@ -292,7 +300,6 @@ body {
         margin-top: 30px;
       }
     }
-
   }
 
   &__right {
@@ -313,11 +320,7 @@ body {
       height: 720px;
       width: calc(56% + 100px);
     }
-
   }
-
 }
 
 /////////////////////////////////////////////
-
-
